@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DAA7AE01F046BEE00B7143C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAA7ADF1F046BEE00B7143C /* AppDelegate.swift */; };
+		3DAA7AE21F046BEE00B7143C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAA7AE11F046BEE00B7143C /* ViewController.swift */; };
+		3DAA7AE51F046BEE00B7143C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAA7AE31F046BEE00B7143C /* Main.storyboard */; };
+		3DAA7AE71F046BEE00B7143C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DAA7AE61F046BEE00B7143C /* Assets.xcassets */; };
+		3DAA7AEA1F046BEE00B7143C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAA7AE81F046BEE00B7143C /* LaunchScreen.storyboard */; };
+		3DAA7AF51F046BEF00B7143C /* YasRssReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAA7AF41F046BEF00B7143C /* YasRssReaderTests.swift */; };
+		3DAA7B001F046BEF00B7143C /* YasRssReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAA7AFF1F046BEF00B7143C /* YasRssReaderUITests.swift */; };
+		3DAA7B0F1F046CC800B7143C /* RssFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAA7B0E1F046CC800B7143C /* RssFeed.swift */; };
+		3DAA7B131F046CEC00B7143C /* MyFeedsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAA7B111F046CEC00B7143C /* MyFeedsCollectionViewCell.swift */; };
+		3DAA7B141F046CEC00B7143C /* RssFeededCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAA7B121F046CEC00B7143C /* RssFeededCollectionViewCell.swift */; };
+		3DAA7B181F046D1400B7143C /* RssProvidersLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAA7B161F046D1400B7143C /* RssProvidersLayout.swift */; };
+		3DAA7B191F046D1400B7143C /* RssFeededlayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAA7B171F046D1400B7143C /* RssFeededlayout.swift */; };
+		3DAA7B1B1F046D6700B7143C /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAA7B1A1F046D6700B7143C /* AddViewController.swift */; };
+		3DAA7B1E1F046D7D00B7143C /* RssFeeded1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAA7B1C1F046D7D00B7143C /* RssFeeded1ViewController.swift */; };
+		3DAA7B1F1F046D7D00B7143C /* FeedItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAA7B1D1F046D7D00B7143C /* FeedItemViewController.swift */; };
+		3DAA7B211F046D9B00B7143C /* XmlParserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAA7B201F046D9B00B7143C /* XmlParserManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DAA7AF11F046BEF00B7143C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DAA7AD41F046BEE00B7143C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DAA7ADB1F046BEE00B7143C;
+			remoteInfo = YasRssReader;
+		};
+		3DAA7AFC1F046BEF00B7143C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DAA7AD41F046BEE00B7143C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DAA7ADB1F046BEE00B7143C;
+			remoteInfo = YasRssReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DAA7ADC1F046BEE00B7143C /* YasRssReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YasRssReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DAA7ADF1F046BEE00B7143C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DAA7AE11F046BEE00B7143C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DAA7AE41F046BEE00B7143C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DAA7AE61F046BEE00B7143C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DAA7AE91F046BEE00B7143C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DAA7AEB1F046BEE00B7143C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DAA7AF01F046BEF00B7143C /* YasRssReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YasRssReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DAA7AF41F046BEF00B7143C /* YasRssReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YasRssReaderTests.swift; sourceTree = "<group>"; };
+		3DAA7AF61F046BEF00B7143C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DAA7AFB1F046BEF00B7143C /* YasRssReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YasRssReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DAA7AFF1F046BEF00B7143C /* YasRssReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YasRssReaderUITests.swift; sourceTree = "<group>"; };
+		3DAA7B011F046BEF00B7143C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DAA7B0E1F046CC800B7143C /* RssFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssFeed.swift; sourceTree = "<group>"; };
+		3DAA7B111F046CEC00B7143C /* MyFeedsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFeedsCollectionViewCell.swift; sourceTree = "<group>"; };
+		3DAA7B121F046CEC00B7143C /* RssFeededCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssFeededCollectionViewCell.swift; sourceTree = "<group>"; };
+		3DAA7B161F046D1400B7143C /* RssProvidersLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssProvidersLayout.swift; sourceTree = "<group>"; };
+		3DAA7B171F046D1400B7143C /* RssFeededlayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssFeededlayout.swift; sourceTree = "<group>"; };
+		3DAA7B1A1F046D6700B7143C /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		3DAA7B1C1F046D7D00B7143C /* RssFeeded1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssFeeded1ViewController.swift; sourceTree = "<group>"; };
+		3DAA7B1D1F046D7D00B7143C /* FeedItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemViewController.swift; sourceTree = "<group>"; };
+		3DAA7B201F046D9B00B7143C /* XmlParserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XmlParserManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DAA7AD91F046BEE00B7143C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DAA7AED1F046BEF00B7143C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DAA7AF81F046BEF00B7143C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DAA7AD31F046BEE00B7143C = {
+			isa = PBXGroup;
+			children = (
+				3DAA7ADE1F046BEE00B7143C /* YasRssReader */,
+				3DAA7AF31F046BEF00B7143C /* YasRssReaderTests */,
+				3DAA7AFE1F046BEF00B7143C /* YasRssReaderUITests */,
+				3DAA7ADD1F046BEE00B7143C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DAA7ADD1F046BEE00B7143C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DAA7ADC1F046BEE00B7143C /* YasRssReader.app */,
+				3DAA7AF01F046BEF00B7143C /* YasRssReaderTests.xctest */,
+				3DAA7AFB1F046BEF00B7143C /* YasRssReaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DAA7ADE1F046BEE00B7143C /* YasRssReader */ = {
+			isa = PBXGroup;
+			children = (
+				3DAA7ADF1F046BEE00B7143C /* AppDelegate.swift */,
+				3DAA7B221F046F4000B7143C /* ViewControllers */,
+				3DAA7B151F046CF700B7143C /* Layouts */,
+				3DAA7B101F046CDF00B7143C /* Cells */,
+				3DAA7B0D1F046CA700B7143C /* Model Classes */,
+				3DAA7AE31F046BEE00B7143C /* Main.storyboard */,
+				3DAA7AE61F046BEE00B7143C /* Assets.xcassets */,
+				3DAA7AE81F046BEE00B7143C /* LaunchScreen.storyboard */,
+				3DAA7AEB1F046BEE00B7143C /* Info.plist */,
+			);
+			path = YasRssReader;
+			sourceTree = "<group>";
+		};
+		3DAA7AF31F046BEF00B7143C /* YasRssReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DAA7AF41F046BEF00B7143C /* YasRssReaderTests.swift */,
+				3DAA7AF61F046BEF00B7143C /* Info.plist */,
+			);
+			path = YasRssReaderTests;
+			sourceTree = "<group>";
+		};
+		3DAA7AFE1F046BEF00B7143C /* YasRssReaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3DAA7AFF1F046BEF00B7143C /* YasRssReaderUITests.swift */,
+				3DAA7B011F046BEF00B7143C /* Info.plist */,
+			);
+			path = YasRssReaderUITests;
+			sourceTree = "<group>";
+		};
+		3DAA7B0D1F046CA700B7143C /* Model Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3DAA7B231F046F5C00B7143C /* Helper */,
+				3DAA7B0E1F046CC800B7143C /* RssFeed.swift */,
+			);
+			name = "Model Classes";
+			sourceTree = "<group>";
+		};
+		3DAA7B101F046CDF00B7143C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3DAA7B111F046CEC00B7143C /* MyFeedsCollectionViewCell.swift */,
+				3DAA7B121F046CEC00B7143C /* RssFeededCollectionViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		3DAA7B151F046CF700B7143C /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				3DAA7B161F046D1400B7143C /* RssProvidersLayout.swift */,
+				3DAA7B171F046D1400B7143C /* RssFeededlayout.swift */,
+			);
+			name = Layouts;
+			sourceTree = "<group>";
+		};
+		3DAA7B221F046F4000B7143C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3DAA7AE11F046BEE00B7143C /* ViewController.swift */,
+				3DAA7B1A1F046D6700B7143C /* AddViewController.swift */,
+				3DAA7B1C1F046D7D00B7143C /* RssFeeded1ViewController.swift */,
+				3DAA7B1D1F046D7D00B7143C /* FeedItemViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3DAA7B231F046F5C00B7143C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3DAA7B201F046D9B00B7143C /* XmlParserManager.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DAA7ADB1F046BEE00B7143C /* YasRssReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DAA7B041F046BEF00B7143C /* Build configuration list for PBXNativeTarget "YasRssReader" */;
+			buildPhases = (
+				3DAA7AD81F046BEE00B7143C /* Sources */,
+				3DAA7AD91F046BEE00B7143C /* Frameworks */,
+				3DAA7ADA1F046BEE00B7143C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YasRssReader;
+			productName = YasRssReader;
+			productReference = 3DAA7ADC1F046BEE00B7143C /* YasRssReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DAA7AEF1F046BEF00B7143C /* YasRssReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DAA7B071F046BEF00B7143C /* Build configuration list for PBXNativeTarget "YasRssReaderTests" */;
+			buildPhases = (
+				3DAA7AEC1F046BEF00B7143C /* Sources */,
+				3DAA7AED1F046BEF00B7143C /* Frameworks */,
+				3DAA7AEE1F046BEF00B7143C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DAA7AF21F046BEF00B7143C /* PBXTargetDependency */,
+			);
+			name = YasRssReaderTests;
+			productName = YasRssReaderTests;
+			productReference = 3DAA7AF01F046BEF00B7143C /* YasRssReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3DAA7AFA1F046BEF00B7143C /* YasRssReaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DAA7B0A1F046BEF00B7143C /* Build configuration list for PBXNativeTarget "YasRssReaderUITests" */;
+			buildPhases = (
+				3DAA7AF71F046BEF00B7143C /* Sources */,
+				3DAA7AF81F046BEF00B7143C /* Frameworks */,
+				3DAA7AF91F046BEF00B7143C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DAA7AFD1F046BEF00B7143C /* PBXTargetDependency */,
+			);
+			name = YasRssReaderUITests;
+			productName = YasRssReaderUITests;
+			productReference = 3DAA7AFB1F046BEF00B7143C /* YasRssReaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DAA7AD41F046BEE00B7143C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = YassineHa;
+				TargetAttributes = {
+					3DAA7ADB1F046BEE00B7143C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9BC4NY7H6Z;
+						ProvisioningStyle = Automatic;
+					};
+					3DAA7AEF1F046BEF00B7143C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9BC4NY7H6Z;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3DAA7ADB1F046BEE00B7143C;
+					};
+					3DAA7AFA1F046BEF00B7143C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9BC4NY7H6Z;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3DAA7ADB1F046BEE00B7143C;
+					};
+				};
+			};
+			buildConfigurationList = 3DAA7AD71F046BEE00B7143C /* Build configuration list for PBXProject "YasRssReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DAA7AD31F046BEE00B7143C;
+			productRefGroup = 3DAA7ADD1F046BEE00B7143C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DAA7ADB1F046BEE00B7143C /* YasRssReader */,
+				3DAA7AEF1F046BEF00B7143C /* YasRssReaderTests */,
+				3DAA7AFA1F046BEF00B7143C /* YasRssReaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DAA7ADA1F046BEE00B7143C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DAA7AEA1F046BEE00B7143C /* LaunchScreen.storyboard in Resources */,
+				3DAA7AE71F046BEE00B7143C /* Assets.xcassets in Resources */,
+				3DAA7AE51F046BEE00B7143C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DAA7AEE1F046BEF00B7143C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DAA7AF91F046BEF00B7143C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DAA7AD81F046BEE00B7143C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DAA7AE21F046BEE00B7143C /* ViewController.swift in Sources */,
+				3DAA7AE01F046BEE00B7143C /* AppDelegate.swift in Sources */,
+				3DAA7B1E1F046D7D00B7143C /* RssFeeded1ViewController.swift in Sources */,
+				3DAA7B1B1F046D6700B7143C /* AddViewController.swift in Sources */,
+				3DAA7B131F046CEC00B7143C /* MyFeedsCollectionViewCell.swift in Sources */,
+				3DAA7B211F046D9B00B7143C /* XmlParserManager.swift in Sources */,
+				3DAA7B191F046D1400B7143C /* RssFeededlayout.swift in Sources */,
+				3DAA7B0F1F046CC800B7143C /* RssFeed.swift in Sources */,
+				3DAA7B141F046CEC00B7143C /* RssFeededCollectionViewCell.swift in Sources */,
+				3DAA7B181F046D1400B7143C /* RssProvidersLayout.swift in Sources */,
+				3DAA7B1F1F046D7D00B7143C /* FeedItemViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DAA7AEC1F046BEF00B7143C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DAA7AF51F046BEF00B7143C /* YasRssReaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DAA7AF71F046BEF00B7143C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DAA7B001F046BEF00B7143C /* YasRssReaderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DAA7AF21F046BEF00B7143C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DAA7ADB1F046BEE00B7143C /* YasRssReader */;
+			targetProxy = 3DAA7AF11F046BEF00B7143C /* PBXContainerItemProxy */;
+		};
+		3DAA7AFD1F046BEF00B7143C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DAA7ADB1F046BEE00B7143C /* YasRssReader */;
+			targetProxy = 3DAA7AFC1F046BEF00B7143C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DAA7AE31F046BEE00B7143C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DAA7AE41F046BEE00B7143C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DAA7AE81F046BEE00B7143C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DAA7AE91F046BEE00B7143C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DAA7B021F046BEF00B7143C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DAA7B031F046BEF00B7143C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DAA7B051F046BEF00B7143C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9BC4NY7H6Z;
+				INFOPLIST_FILE = YasRssReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.happs.YasRssReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3DAA7B061F046BEF00B7143C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9BC4NY7H6Z;
+				INFOPLIST_FILE = YasRssReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.happs.YasRssReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3DAA7B081F046BEF00B7143C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9BC4NY7H6Z;
+				INFOPLIST_FILE = YasRssReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.happs.YasRssReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YasRssReader.app/YasRssReader";
+			};
+			name = Debug;
+		};
+		3DAA7B091F046BEF00B7143C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9BC4NY7H6Z;
+				INFOPLIST_FILE = YasRssReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.happs.YasRssReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YasRssReader.app/YasRssReader";
+			};
+			name = Release;
+		};
+		3DAA7B0B1F046BEF00B7143C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9BC4NY7H6Z;
+				INFOPLIST_FILE = YasRssReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.happs.YasRssReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = YasRssReader;
+			};
+			name = Debug;
+		};
+		3DAA7B0C1F046BEF00B7143C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9BC4NY7H6Z;
+				INFOPLIST_FILE = YasRssReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.happs.YasRssReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = YasRssReader;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DAA7AD71F046BEE00B7143C /* Build configuration list for PBXProject "YasRssReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DAA7B021F046BEF00B7143C /* Debug */,
+				3DAA7B031F046BEF00B7143C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DAA7B041F046BEF00B7143C /* Build configuration list for PBXNativeTarget "YasRssReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DAA7B051F046BEF00B7143C /* Debug */,
+				3DAA7B061F046BEF00B7143C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DAA7B071F046BEF00B7143C /* Build configuration list for PBXNativeTarget "YasRssReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DAA7B081F046BEF00B7143C /* Debug */,
+				3DAA7B091F046BEF00B7143C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DAA7B0A1F046BEF00B7143C /* Build configuration list for PBXNativeTarget "YasRssReaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DAA7B0B1F046BEF00B7143C /* Debug */,
+				3DAA7B0C1F046BEF00B7143C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DAA7AD41F046BEE00B7143C /* Project object */;
+}
